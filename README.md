@@ -25,10 +25,10 @@ The README treats the 2014 reform design as the main paper. The 2018 tariff desi
 
 | File | Role in the project |
 |---|---|
-| `2014商事制度改革_政策背景与识别合理性.pdf` | Main policy background and identification memo for the 2014 Business Registration Reform |
-| `外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Earlier project memo based on the 2018 U.S.-China tariff-war shock |
-| `PDBCLS.pdf` | Gouin-Bonenfant (2022), core theory reference on productivity dispersion, between-firm wage competition, and the labor share |
-| `AERI_2024_0570_final (3).pdf` | Rubens, Wu, and Xu, method reference on separating wage markdowns from labor-augmenting productivity |
+| `references/2014商事制度改革_政策背景与识别合理性.pdf` | Main policy background and identification memo for the 2014 Business Registration Reform |
+| `references/外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Earlier project memo based on the 2018 U.S.-China tariff-war shock |
+| `references/PDBCLS.pdf` | Gouin-Bonenfant (2022), core theory reference on productivity dispersion, between-firm wage competition, and the labor share |
+| `references/AERI_2024_0570_final (3).pdf` | Rubens, Wu, and Xu, method reference on separating wage markdowns from labor-augmenting productivity |
 | `COLLABORATOR_PROJECT_STORY.md` | Collaborator-facing project story distilled from the screenshot discussion |
 | `legacy_files/gpt_screenshots/*.png` | Local-only legacy GPT discussion screenshots; intentionally ignored and not pushed to the remote repository |
 
