@@ -1,38 +1,37 @@
-# Labor Market Power and Product-Market Entry Reform
+# 进入放松能否约束企业劳动市场势力？来自中国制造业的证据
 
-## Project Overview
-
-**Working title**
-
-Can Entry Liberalization Discipline Labor-Market Power? Evidence from Chinese Manufacturing
+## 项目定位
 
 **中文题目**
 
 进入放松能否约束企业劳动市场势力？来自中国制造业的证据
 
-This project studies whether a product-market reform that lowers entry barriers can discipline firms' labor-market power. The design uses China's 2014 Business Registration Reform as an entry deregulation shock. The core empirical question is whether firms in industries more exposed to pre-reform entry barriers experienced larger declines in labor markdowns after the reform.
+**English working title**
 
-The project story is singular:
+Can Entry Liberalization Discipline Labor-Market Power? Evidence from Chinese Manufacturing
 
-| Design | Shock | Current role |
+本项目的故事只有一个：利用中国 2014 年商事制度改革作为进入放松冲击，研究企业进入门槛下降是否能够约束企业劳动市场势力。核心经验问题是：改革前进入壁垒更高、因而受到改革冲击更强的行业，改革后企业 labor markdown 是否下降更多。
+
+2018 U.S. Section 301 tariffs on Chinese exports 不是本文的研究故事，也不是备选实证设计。本仓库保留相关材料，只是为了学习一种构造主解释变量 `X` 的方法：用改革前预定结构差异与全国性政策冲击相互作用，形成差异化政策暴露度。
+
+| 项目元素 | 内容 | 当前作用 |
 |---|---|---|
-| Main design | 2014 Business Registration Reform | Project core because it directly changes entry costs and fits the Chinese manufacturing setting |
-| Method reference only | 2018 U.S. Section 301 tariff exposure materials | Used only to learn the exposure-design logic for constructing `X`, not as a project story |
+| 研究主线 | 2014 年商事制度改革 | 本文唯一的经济学故事：进入放松是否约束 labor-market power |
+| 方法参照 | 2018 年关税暴露度构造 | 只学习 `pre-determined structure x policy shock` 的 exposure 设计思想 |
+| 合作者文档 | `COLLABORATOR_PROJECT_STORY.md` | 可直接发给合作者的完整项目故事 |
 
-The 2018 tariff materials are not part of the project's economic narrative. They are retained only as a reference for how to construct an exposure variable from pre-determined structure and a policy shock.
+## 项目材料
 
-## Current Materials
-
-| File | Role in the project |
+| 文件 | 用途 |
 |---|---|
-| `references/2014商事制度改革_政策背景与识别合理性.pdf` | Main policy background and identification memo for the 2014 Business Registration Reform |
-| `references/外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Method reference for exposure construction; not the current paper story |
-| `references/PDBCLS.pdf` | Gouin-Bonenfant (2022), core theory reference on productivity dispersion, between-firm wage competition, and the labor share |
-| `references/AERI_2024_0570_final (3).pdf` | Rubens, Wu, and Xu, method reference on separating wage markdowns from labor-augmenting productivity |
-| `COLLABORATOR_PROJECT_STORY.md` | Collaborator-facing project story distilled from the screenshot discussion |
-| `legacy_files/gpt_screenshots/*.png` | Local-only legacy GPT discussion screenshots; intentionally ignored and not pushed to the remote repository |
+| `COLLABORATOR_PROJECT_STORY.md` | 合作者版完整项目故事 |
+| `references/2014商事制度改革_政策背景与识别合理性.pdf` | 2014 年商事制度改革的政策背景与识别说明 |
+| `references/外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | 构造 exposure `X` 的方法参照，不作为本文故事 |
+| `references/PDBCLS.pdf` | Gouin-Bonenfant (2022)，用于理解生产率分散、企业间竞争和 labor share 再配置机制 |
+| `references/AERI_2024_0570_final (3).pdf` | Rubens-Wu-Xu，作为 labor markdown 识别与 labor-augmenting productivity 区分的参考 |
+| `legacy_files/gpt_screenshots/*.png` | 本地 legacy 截图，不推送到远程仓库 |
 
-External bibliographic status and policy-source details have not yet been independently verified in this repository. Treat the current PDFs and screenshots as project materials to be checked during the literature and citation verification stage.
+外部文献状态、政策文件细节和 citation 信息还需要在正式写作前单独核验。当前 README 只负责固定项目故事、识别逻辑和文件结构。
 
 ## Research Question
 
