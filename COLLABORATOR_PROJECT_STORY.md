@@ -1,4 +1,4 @@
-# 进入放松、产品市场竞争与企业劳动市场势力
+# 进入放松能否约束企业劳动市场势力？来自中国制造业的证据
 
 合作者讨论稿
 
@@ -6,13 +6,13 @@
 
 本文研究一个直接降低企业进入门槛的制度改革，是否能够通过增强产品市场竞争和增加劳动者外部雇主选择，约束企业在劳动市场上的工资设定权。核心问题不是简单问“竞争是否提高工资”，而是问：当企业进入制度被放松以后，企业的 labor markdown 是否下降，工资和边际产出之间的缺口是否收窄。
 
-当前最稳妥的英文题目是：
+对应的英文工作标题是：
 
 ```text
 Can Entry Liberalization Discipline Labor-Market Power? Evidence from Chinese Manufacturing
 ```
 
-更具体的版本是：
+如果标题中需要直接点出制度背景，也可以写成：
 
 ```text
 Can Entry Deregulation Discipline Labor-Market Power? Evidence from China's Business Registration Reform
@@ -287,9 +287,11 @@ Y_{i,j,c,t}
 
 第四，它强调顶刊写作中的识别纪律：主 X 是政策冲击暴露度，而不是改革后竞争结果本身。产品市场竞争是机制证据，不是主识别变量。
 
-## 与 2018 贸易战设计的关系
+## 从 2018 关税材料中借鉴的 X 构造方法
 
-截图中也出现了 2018 年美国 Section 301 对华加征关税的 shift-share 暴露度设计。这个设计可以写成：
+2018 年美国 Section 301 对华加征关税不是本文的故事。本文不研究贸易战，也不把贸易冲击作为主冲击。该材料只用于学习一种构造主解释变量的方法：不要使用一个简单的全国性 post dummy，而是把政策发生时间和改革前预定暴露度结合起来。
+
+关税材料中的暴露度写法是：
 
 ```text
 USTariffExposure_{g,t}
@@ -297,14 +299,38 @@ USTariffExposure_{g,t}
   x USTariff_{k,t}
 ```
 
-但它和 2014 商事制度改革不是同一个故事。2018 贸易战是外部市场准入恶化和出口租金收缩冲击；2014 商事制度改革是进入成本下降和市场准入放松冲击。
+这个公式的经济学逻辑是：
 
-两者都能研究 product-market shocks 和 labor-market power，但方向不同：
+```text
+policy exposure = pre-determined structure x policy shock
+```
 
-- 2014 改革更适合问：进入放松能否 discipline labor-market power？
-- 2018 贸易战更适合问：外部出口租金压缩会 discipline 还是 amplify labor-market power？
+本文借鉴的是这个构造 X 的思想，而不是借鉴贸易战故事本身。对应到本文，主解释变量应写成：
 
-当前项目建议以 2014 改革为主线。2018 贸易战可以保留为另一篇文章、附录讨论，或未来扩展。
+```text
+EntryReformExposure_{j,t}
+  = PreReformEntryBarrier_j x Post2014_t
+```
+
+如果数据支持城市-行业层面，可以进一步写成：
+
+```text
+EntryReformExposure_{c,j,t}
+  = InitialIndustryShare_{c,j,pre}
+  x PreReformEntryBarrier_j
+  x Post2014_t
+```
+
+类比关系如下：
+
+| 关税暴露度材料 | 本文进入放松设计 |
+|---|---|
+| 基期对美出口产品结构 | 基期城市-行业结构或行业进入壁垒 |
+| 产品层面美国加征关税 | 2014 年商事制度改革 |
+| `initial share x tariff shock` | `pre-reform entry barrier x post-2014` |
+| 用于度量受到外部贸易冲击的强度 | 用于度量受到进入放松冲击的强度 |
+
+因此，Section 301 材料在本文中的作用只有一个：提醒我们用“改革前结构差异 × 全国政策冲击”的方式构造 X。它不是本文的研究对象，也不应进入合作者版故事的主线。
 
 ## 给合作者的关键决策点
 

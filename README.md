@@ -10,23 +10,23 @@ Can Entry Liberalization Discipline Labor-Market Power? Evidence from Chinese Ma
 
 进入放松能否约束企业劳动市场势力？来自中国制造业的证据
 
-This project studies whether a product-market reform that lowers entry barriers can discipline firms' labor-market power. The current main design uses China's 2014 Business Registration Reform as an entry deregulation shock. The core empirical question is whether firms in industries more exposed to pre-reform entry barriers experienced larger declines in labor markdowns after the reform.
+This project studies whether a product-market reform that lowers entry barriers can discipline firms' labor-market power. The design uses China's 2014 Business Registration Reform as an entry deregulation shock. The core empirical question is whether firms in industries more exposed to pre-reform entry barriers experienced larger declines in labor markdowns after the reform.
 
-The project started from a broader question about product-market shocks and labor-market power. The local materials contain two possible empirical designs:
+The project story is singular:
 
 | Design | Shock | Current role |
 |---|---|---|
-| Main design | 2014 Business Registration Reform | Preferred project core because it directly changes entry costs and fits the 2007-2020 data window |
-| Alternative or extension | 2018 U.S. Section 301 tariffs on Chinese exports | Useful for a related project on external product-market demand shocks and export-rent compression |
+| Main design | 2014 Business Registration Reform | Project core because it directly changes entry costs and fits the Chinese manufacturing setting |
+| Method reference only | 2018 U.S. Section 301 tariff exposure materials | Used only to learn the exposure-design logic for constructing `X`, not as a project story |
 
-The README treats the 2014 reform design as the main paper. The 2018 tariff design is preserved as a secondary design because it asks a related but different question: whether an external market-access shock disciplines or amplifies labor-market power through export-rent compression.
+The 2018 tariff materials are not part of the project's economic narrative. They are retained only as a reference for how to construct an exposure variable from pre-determined structure and a policy shock.
 
 ## Current Materials
 
 | File | Role in the project |
 |---|---|
 | `references/2014商事制度改革_政策背景与识别合理性.pdf` | Main policy background and identification memo for the 2014 Business Registration Reform |
-| `references/外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Earlier project memo based on the 2018 U.S.-China tariff-war shock |
+| `references/外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Method reference for exposure construction; not the current paper story |
 | `references/PDBCLS.pdf` | Gouin-Bonenfant (2022), core theory reference on productivity dispersion, between-firm wage competition, and the labor share |
 | `references/AERI_2024_0570_final (3).pdf` | Rubens, Wu, and Xu, method reference on separating wage markdowns from labor-augmenting productivity |
 | `COLLABORATOR_PROJECT_STORY.md` | Collaborator-facing project story distilled from the screenshot discussion |
@@ -261,7 +261,7 @@ The project requires the following data modules:
 | Labor-market data | employment, wage bill, worker mobility, employer concentration, unemployment or local labor demand | Measure outside options and local labor-market conditions |
 | Policy and institutional data | license dependence, pre-entry approval requirements, reform timing | Construct alternative entry-barrier measures |
 
-If the project later uses the 2018 tariff-war design, it will also require China Customs firm-HS-destination export data and U.S. Section 301 HS-level tariff lists.
+The 2018 tariff-war memo remains useful only as an exposure-design reference. The current paper does not require China Customs tariff-war variables.
 
 ## Contribution
 
@@ -288,22 +288,30 @@ The best paper framing is:
 | COVID-19 contamination | 2020 may mix reform dynamics with pandemic shocks | Use 2007-2019 as baseline; treat 2020 separately |
 | Reallocation | Aggregate labor share can move through between-firm composition | Decompose within-firm and between-firm components |
 
-## Relationship to the 2018 Tariff-War Design
+## Exposure-Design Lesson From the 2018 Tariff Materials
 
-The earlier project memo proposes a shift-share exposure to U.S. Section 301 tariffs:
+The earlier tariff memo is useful because it shows how to construct a policy exposure from pre-determined structure and a policy shock:
 
 ```text
 USTariffExposure_{g,t}
   = sum_k [X^{US}_{g,k,2016} / X_{g,2016}] x USTariff_{k,t}
 ```
 
-This design is valuable but asks a different question. It studies an external market-access shock that compresses export rents. The expected labor-market effect is ambiguous:
+The current paper borrows the construction logic, not the tariff story. The corresponding entry-reform exposure is:
 
-1. If the shock weakens firms and lowers local labor demand, worker outside options may worsen and labor markdowns may rise.
-2. If the shock disciplines inefficient firms or changes product-market rents, markdowns may fall.
-3. If value added reallocates toward high-markdown firms, aggregate labor share may decline even without uniform within-firm wage cuts.
+```text
+EntryReformExposure_{j,t}
+  = PreReformEntryBarrier_j x Post2014_t
+```
 
-This design is best kept as a related project or extension until the 2014 reform paper is empirically disciplined.
+or, if city-industry variation is available:
+
+```text
+EntryReformExposure_{c,j,t}
+  = InitialIndustryShare_{c,j,pre} x PreReformEntryBarrier_j x Post2014_t
+```
+
+Thus, the Section 301 materials are a methodological reference for building `X`; the paper's economic story remains entry liberalization and labor-market power in Chinese manufacturing.
 
 ## Recommended Next Steps
 
