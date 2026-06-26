@@ -1,0 +1,45 @@
+# Windows and editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+tmp/
+temp/
+
+# Stata generated files
+*.log
+*.smcl
+*.gph
+stata.trk
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Large or restricted research data should not be committed
+data/raw/
+data/intermediate/
+data/processed/
+*.dta
+*.sas7bdat
+*.parquet
+*.feather
+*.rds
