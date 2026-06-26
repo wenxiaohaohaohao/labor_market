@@ -29,7 +29,8 @@ The README treats the 2014 reform design as the main paper. The 2018 tariff desi
 | `外部产品市场冲击与劳动市场势力_研究项目说明.pdf` | Earlier project memo based on the 2018 U.S.-China tariff-war shock |
 | `PDBCLS.pdf` | Gouin-Bonenfant (2022), core theory reference on productivity dispersion, between-firm wage competition, and the labor share |
 | `AERI_2024_0570_final (3).pdf` | Rubens, Wu, and Xu, method reference on separating wage markdowns from labor-augmenting productivity |
-| `*.png` screenshots | GPT discussion notes that refine the main research design, treatment construction, mechanism language, and top-journal positioning |
+| `COLLABORATOR_PROJECT_STORY.md` | Collaborator-facing project story distilled from the screenshot discussion |
+| `legacy_files/gpt_screenshots/*.png` | Local-only legacy GPT discussion screenshots; intentionally ignored and not pushed to the remote repository |
 
 External bibliographic status and policy-source details have not yet been independently verified in this repository. Treat the current PDFs and screenshots as project materials to be checked during the literature and citation verification stage.
 
@@ -315,4 +316,3 @@ This design is best kept as a related project or extension until the 2014 reform
 7. Add heterogeneity by initial concentration, local labor-market outside options, and initial entry barriers.
 8. Decompose aggregate labor-share changes into within-firm and between-firm components.
 9. Verify all literature references, policy sources, and citation details before drafting the introduction and literature review.
-

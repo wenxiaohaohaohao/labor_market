@@ -43,3 +43,6 @@ data/processed/
 *.parquet
 *.feather
 *.rds
+
+# Local-only legacy discussion screenshots
+legacy_files/**/*.png
