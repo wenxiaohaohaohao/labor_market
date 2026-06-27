@@ -48,26 +48,30 @@ The paper breaks this question into four testable sub-questions:
 
 ## Core Economic Mechanism
 
-The preferred mechanism is not "competition itself causes labor-market power" as a direct regression control. Competition variables such as entry, HHI, markup, CR4, and market shares are equilibrium outcomes. The paper should use an externally timed reform shock interacted with pre-reform exposure, then show that the reform changed product-market structure.
+The paper's main mechanism is an employer-competition channel, not a direct claim that product-market competition mechanically lowers labor markdowns. Competition variables such as entry, HHI, markup, CR4, and market shares are equilibrium outcomes. The paper should use an externally timed reform shock interacted with pre-reform exposure, then test whether entry liberalization increased workers' outside employer options.
 
-The causal chain is:
+The main labor-market channel is:
+
+```text
+Business Registration Reform
+  -> entry cost decreases
+  -> more potential employers in the same labor market
+  -> worker outside options improve
+  -> residual labor supply elasticity facing incumbent firms rises
+  -> labor markdown declines
+```
+
+Product-market restructuring remains essential, but it is reform validation and auxiliary mechanism evidence:
 
 ```text
 Business Registration Reform
   -> entry cost decreases
   -> firm entry increases
-  -> product-market competition increases
-  -> product markups and rents decline
+  -> product-market structure changes
+  -> entry, exit, concentration, markup, and price-cost margin respond
 ```
 
-The labor-market channel is:
-
-```text
-firm entry increases
-  -> worker outside options improve
-  -> residual labor supply elasticity facing incumbent firms rises
-  -> labor markdown declines
-```
+The product-market channel should not be used as the paper's direct theoretical proof for lower labor markdowns. Stronger product-market competition can change marginal revenue products, rents, scale, and wage pass-through in different directions. Therefore, product-market outcomes should be used to show that the reform changed market structure and to study heterogeneity, not as the main causal mediator for markdowns.
 
 The reallocation channel is:
 
@@ -141,7 +145,7 @@ This variable should not be mechanically equated with low labor share. Rubens, W
 | Wage outcomes | average wage, wage bill per worker, wage growth | Test wage adjustment |
 | Pass-through | wage-productivity pass-through, rent sharing | Test whether productivity or rents are passed to workers |
 | Distribution | labor share, compensation share | Study income distribution effects |
-| Product market | entry rate, exit rate, HHI, CR4, markup, price-cost margin | Validate the product-market reform channel |
+| Product market | entry rate, exit rate, HHI, CR4, markup, price-cost margin | Validate product-market restructuring after the reform |
 | Reallocation | top-firm value-added share, productivity dispersion, between-firm labor-share decomposition | Separate within-firm effects from reallocation |
 
 ## Baseline Empirical Design
@@ -233,7 +237,8 @@ Recommended heterogeneity tests:
 | High initial product-market concentration | Stronger product-market restructuring |
 | Low worker mobility or weak outside options | Smaller markdown decline or weaker pass-through |
 | High initial monopsony or employer concentration | Stronger potential discipline effect if new entrants improve outside options |
-| Industries with larger post-reform entry response | Stronger consistency with product-market competition channel |
+| Industries with larger post-reform entry response in the same local labor market | Stronger consistency with the employer-competition channel |
+| Industries with larger product-market restructuring but limited labor-market overlap | Reform validation, but weaker evidence for the main labor-market mechanism |
 
 Suggested regression:
 
@@ -273,16 +278,20 @@ The project can make four contributions.
 
 The best paper framing is:
 
-> The paper first estimates the reduced-form effect of entry-reform exposure on labor markdowns. It then shows that the effect is concentrated in industries where the reform induced stronger product-market restructuring, measured by entry, exit, concentration, markup, and price-cost-margin responses. This pattern is consistent with a product-market competition channel.
+> The paper first estimates the reduced-form effect of entry-reform exposure on labor markdowns. It then tests whether the decline is stronger where new entry plausibly expands workers' outside employer options, such as initially concentrated employer markets, high-overlap city-industry labor markets, or settings with greater worker mobility. Product-market outcomes are used to validate that the reform changed market structure and to provide auxiliary mechanism evidence.
 
 ## Main Identification Risks
 
 | Risk | Why it matters | Planned response |
 |---|---|---|
-| Pre-reform entry barriers are not random | High-barrier industries may already have different wage or productivity trends | Event-study pre-trend tests, alternative exposure measures, industry trends, placebo reform years |
+| Pre-reform entry barriers are not random | High-barrier industries may already have different wage, productivity, or employment trends | Event-study pre-trend tests, alternative exposure measures, industry trends, placebo reform years |
+| SOE concentration | High-capital-barrier industries may be more state-owned, and SOE wage setting may respond to political or administrative forces rather than entry liberalization | Control for or stratify by ownership, test SOE and non-SOE samples separately, check whether results are driven by SOE-heavy sectors |
+| Capital intensity and production technology | `CapitalBarrier` may proxy for capital intensity or production technology, which directly affects MRPL and markdown estimation | Control for pre-reform capital intensity, add industry trends, compare exposures normalized by assets, sales, or employment |
+| License dependence and regulatory intensity | High registered-capital burden may coincide with industries subject to entry licenses or pre-approval rules beyond registered capital | Build license-dependence controls or alternative exposure measures where data allow; separate capital-registration exposure from broader administrative regulation |
+| Concurrent 2014-era policies | Anti-corruption, SOE reform, capacity-reduction policies, macro slowdown, and local industrial policies may affect wages, entry, and markups around the same period | Add city-year fixed effects where possible, exclude sensitive sectors, control for known policy exposures, and run placebo or sector-exclusion checks |
+| Industry-specific trends | High-barrier industries may have different secular trajectories even before the reform | Include industry trends only when they do not absorb treatment, compare pre-trends, and report sensitivity to trend controls |
 | Post-treatment controls | Entry, HHI, markups, and market shares are equilibrium outcomes | Use them as outcomes, validation tests, or heterogeneity variables, not baseline controls |
 | Firm observation changes | Registration reform may change which firms appear in the data | Separate incumbent-firm and entrant-firm analyses; use balanced or continuing-firm samples as robustness |
-| Concurrent policies | Other policies around 2014 may affect firm entry, wages, or competition | Add city-year fixed effects where possible; exclude sensitive sectors; control for known policy exposures |
 | Markdown measurement | Low labor share is not identical to monopsony | Use structural markdown measures; report wage, wage-productivity pass-through, and labor-share alternatives |
 | COVID-19 contamination | 2020 may mix reform dynamics with pandemic shocks | Use 2007-2019 as baseline; treat 2020 separately |
 | Reallocation | Aggregate labor share can move through between-firm composition | Decompose within-firm and between-firm components |
@@ -318,7 +327,7 @@ Thus, the Section 301 materials are a methodological reference for building `X`;
 2. Build the pre-reform `CapitalBarrier_j` measure from entrant registered-capital data.
 3. Construct alternative `EntryBarrier` measures for robustness.
 4. Estimate first-stage reform effects on entry, exit, concentration, markups, and price-cost margins.
-5. Finalize the labor markdown measure and document its assumptions.
+5. Insert the author-supplied labor markdown estimation route and document its assumptions once available.
 6. Run the baseline markdown regression and event-study pre-trend checks.
 7. Add heterogeneity by initial concentration, local labor-market outside options, and initial entry barriers.
 8. Decompose aggregate labor-share changes into within-firm and between-firm components.

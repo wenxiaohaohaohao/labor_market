@@ -4,7 +4,7 @@
 
 ## 一句话概括
 
-本文研究一个直接降低企业进入门槛的制度改革，是否能够通过增强产品市场竞争和增加劳动者外部雇主选择，约束企业在劳动市场上的工资设定权。核心问题不是简单问“竞争是否提高工资”，而是问：当企业进入制度被放松以后，企业的 labor markdown 是否下降，工资和边际产出之间的缺口是否收窄。
+本文研究一个直接降低企业进入门槛的制度改革，是否能够通过增加劳动者面对的潜在雇主、改善 worker outside options，约束企业在劳动市场上的工资设定权。核心问题不是简单问“竞争是否提高工资”，而是问：当企业进入制度被放松以后，企业的 labor markdown 是否下降，工资和边际产出之间的缺口是否收窄。
 
 对应的英文工作标题是：
 
@@ -20,13 +20,13 @@ Can Entry Deregulation Discipline Labor-Market Power? Evidence from China's Busi
 
 ## 项目的直觉
 
-很多关于产品市场竞争的论文关注企业进入、价格、markup、利润率和生产率。很多关于劳动市场势力的论文关注企业是否支付低于劳动边际收益产品的工资。这个项目的连接点是：如果产品市场改革降低了进入门槛，它不仅会改变产品市场的竞争结构，也会改变劳动者面对的潜在雇主集合。
+很多关于产品市场竞争的论文关注企业进入、价格、markup、利润率和生产率。很多关于劳动市场势力的论文关注企业是否支付低于劳动边际收益产品的工资。这个项目的连接点是：如果进入放松改革降低了企业设立门槛，它会增加劳动者面对的潜在雇主集合，从而可能削弱原有企业的 monopsony power。
 
 2014 年中国商事制度改革适合讲这个故事。改革的核心不是劳动合同、最低工资或社保政策，而是企业设立制度：注册资本制度、工商登记便利化、前置审批清理、证照办理简化等。也就是说，它首先作用于企业进入和产品市场结构，而不是直接作用于工资规则。
 
 这使得本文可以提出一个清楚的经济学问题：
 
-> 一个产品市场侧的进入放松改革，能否间接约束企业在劳动市场上的 monopsony power？
+> 一个企业进入侧的制度放松改革，能否通过增加潜在雇主和改善劳动者外部选择，约束企业在劳动市场上的 monopsony power？
 
 ## 为什么不直接把产品市场竞争当作 X
 
@@ -39,19 +39,19 @@ Can Entry Deregulation Discipline Labor-Market Power? Evidence from China's Busi
 1. 先构造一个政策冲击暴露度：`Post2014 x PreReformEntryBarrier`。
 2. 用这个冲击暴露度估计 labor markdown 的 reduced-form effect。
 3. 再证明同一个冲击确实改变了产品市场结构，例如 entry、exit、HHI、CR4、markup 和 price-cost margin。
-4. 最后展示 labor-market effect 集中出现在产品市场结构调整更强、改革前进入壁垒更高或初始竞争较弱的行业。
+4. 最后展示 labor-market effect 是否集中出现在新进入者更可能与原有企业争夺同类工人的劳动市场，例如初始雇主集中度高、城市-行业劳动市场重叠度高或工人流动性更强的地方。
 
 因此，本文的机制语言应写成：
 
-> The pattern is consistent with a product-market competition channel.
+> The pattern is consistent with an employer-competition channel.
 
-不应写成：
+不应把 product-market competition 写成解释 labor markdown 下降的主因果中介。
 
-> Product-market competition is the fully identified causal mediator.
+产品市场结构变化仍然重要，但它的主要作用是 reform validation 和辅助机制证据：它说明改革确实降低了进入门槛并改变了市场结构。不能把产品市场竞争本身直接写成主因果机制，因为产品市场竞争对 labor markdown 的理论方向并不天然明确；它可能同时影响 MRPL、租金、规模调整和工资传导。
 
 ## 核心因果故事
 
-项目的主线可以写成三步。
+项目的主线可以写成三步。前两步是主机制，第三步是 reform validation 和辅助证据。
 
 第一步，2014 年商事制度改革降低企业进入成本：
 
@@ -61,15 +61,7 @@ Business Registration Reform
   -> Firm Entry increases
 ```
 
-第二步，更多潜在进入者改变产品市场结构：
-
-```text
-Firm Entry increases
-  -> Product-Market Competition increases
-  -> Markup, HHI, CR4, and Price-Cost Margin decline
-```
-
-第三步，企业进入也改变劳动市场：
+第二步，更多潜在进入者改变劳动市场上的外部选择：
 
 ```text
 Firm Entry increases
@@ -78,7 +70,15 @@ Firm Entry increases
   -> Labor Markdown declines
 ```
 
-经济含义是：当劳动者有更多潜在雇主时，原有企业面对的残余劳动供给曲线更有弹性，企业压低工资相对边际收益产品的空间下降。因此，一个看似产品市场侧的改革，可能通过雇主竞争和外部选择影响劳动市场势力。
+第三步，同一个改革也应当改变产品市场结构：
+
+```text
+Firm Entry increases
+  -> Product-Market Structure changes
+  -> Entry, Exit, HHI, CR4, Markup, and Price-Cost Margin respond
+```
+
+经济含义是：当劳动者有更多潜在雇主时，原有企业面对的残余劳动供给曲线更有弹性，企业压低工资相对边际收益产品的空间下降。因此，一个企业进入侧的改革，可能通过雇主竞争和外部选择影响劳动市场势力。产品市场结果用于证明改革确实改变了进入环境，但不是本文解释 labor markdown 下降的唯一或直接中介。
 
 ## 主解释变量
 
@@ -220,7 +220,7 @@ Y_{j,t}
 
 > The reform generated economically meaningful changes in product-market structure.
 
-这个表述比“产品市场竞争是唯一机制”更稳。它说明改革确实改变了产品市场环境，同时避免对内生均衡变量做过强的因果中介声明。
+这个表述说明改革确实改变了产品市场环境，同时避免对内生均衡变量做过强的因果中介声明。主机制仍应回到劳动市场：新进入是否真正增加了同一劳动市场中的潜在雇主。
 
 ## 机制与异质性
 
@@ -251,10 +251,12 @@ Markdown_{i,j,t}
 | 维度 | 预期 |
 |---|---|
 | 改革前进入壁垒高 | labor markdown 下降更明显 |
-| 初始产品市场集中度高 | 产品市场结构调整更强 |
-| 改革后进入反应大 | markdown 下降更符合竞争渠道 |
+| 初始雇主集中度高 | 若新进入改善雇主选择，labor markdown 应下降更明显 |
+| 新进入者与原有企业处于同一城市-行业劳动市场 | 更支持 employer competition / outside option channel |
+| 劳动者流动性强 | outside option 更容易转化为工资约束，markdown 下降应更明显 |
+| 初始产品市场集中度高 | 产品市场结构调整更强，作为 reform validation 和辅助证据 |
+| 改革后进入反应大 | 若进入发生在同一劳动市场，markdown 下降更符合雇主竞争机制 |
 | 劳动者流动性弱 | markdown 下降可能较弱，或改革效果取决于是否真正增加 outside options |
-| 初始雇主集中度高 | 若新进入改善雇主选择，劳动市场 discipline effect 更强 |
 
 ## 动态事件研究
 
@@ -279,13 +281,27 @@ Y_{i,j,c,t}
 
 这篇文章的贡献可以写成四点。
 
-第一，它把 entry deregulation 的结果从企业进入、产品市场竞争和 markup 推进到劳动市场势力。现有文献通常问改革是否促进进入或提高效率，本文进一步问它是否改变企业对工人的工资设定权。
+第一，它把 entry deregulation 的结果从企业进入、产品市场竞争和 markup 推进到劳动市场势力。现有文献通常问改革是否促进进入或提高效率，本文进一步问它是否通过增加潜在雇主改变企业对工人的工资设定权。
 
-第二，它把 product-market power 和 labor-market power 放在一个实证框架中。产品市场改革可能改变企业面对的产品需求，也可能改变劳动者面对的雇主选择，二者共同影响工资和劳动收入分配。
+第二，它把 product-market restructuring 和 labor-market power 放在一个实证框架中。本文不把产品市场竞争本身当作外生解释变量，而是用进入放松暴露度估计 labor markdown 的 reduced-form effect，再用产品市场变量验证改革确实改变了进入环境。
 
 第三，它提供一个清楚的中国制造业制度背景。2014 年商事制度改革是全国性改革，但改革前不同行业的进入壁垒不同，因此可以构造差异化 exposure。
 
-第四，它强调顶刊写作中的识别纪律：主 X 是政策冲击暴露度，而不是改革后竞争结果本身。产品市场竞争是机制证据，不是主识别变量。
+第四，它强调顶刊写作中的识别纪律：主 X 是政策冲击暴露度，而不是改革后竞争结果本身。雇主竞争和 worker outside options 是主机制；产品市场竞争是 reform validation 和辅助机制证据，不是主识别变量。
+
+## 识别威胁与需要提前处理的问题
+
+`CapitalBarrier` 比事后进入率更接近 2014 年注册资本制度改革的政策内容，但它不是天然外生。改革前注册资本负担高的行业，可能同时具有更高资本密集度、更高国企占比、更强许可证监管、更复杂的前置审批，或者更强的行业政策暴露。如果这些因素本身影响工资设定、MRPL 或 labor markdown，它们会威胁 DiD 的解释。
+
+后续实证计划需要至少处理以下风险：
+
+| 风险 | 为什么重要 | 应对方向 |
+|---|---|---|
+| SOE concentration | 国企集中行业可能同时资本门槛高，且工资设定受行政或政治因素影响 | 控制或分组所有制，分别看 SOE 和 non-SOE，排查 SOE-heavy 行业驱动 |
+| Capital intensity | 资本密集度会影响生产函数估计、MRPL 和 markdown 测度 | 加入改革前资本密集度控制，比较不同分母标准化的 `CapitalBarrier` |
+| License dependence | 注册资本负担可能和许可证、前置审批、行业准入监管同时存在 | 建立 license-dependence 指标或作为替代 exposure / 控制变量 |
+| Concurrent policies | 2014 年前后反腐、SOE 改革、产能政策和宏观换挡可能影响工资与进入 | 加 city-year FE、行业趋势、敏感行业排除和政策暴露控制 |
+| Industry-specific trends | 高进入壁垒行业可能原本就有不同趋势 | event study 检查 pre-trends，做 placebo reform year 和趋势稳健性检验 |
 
 ## 从 2018 关税材料中借鉴的 X 构造方法
 
@@ -340,14 +356,14 @@ EntryReformExposure_{c,j,t}
 2. 企业数据来源：是否能拿到企业注册资本、paid-in capital、assets、sales、employment、wage bill、industry、city 和 entry year。
 3. entrants 定义：使用新注册企业、首次出现在数据中的企业，还是企业年龄低于某阈值的企业。
 4. `CapitalBarrier` 分母：使用 assets 还是 sales，需要按数据质量决定。
-5. labor markdown 估计方法：需要明确 production function、MRPL、wage、labor supply elasticity 或替代测度。
+5. labor markdown 估计方法：由作者后续提供完整路线；当前文档只保留方法占位。
 6. 固定效应结构：根据 treatment 层级决定是否使用 firm FE、city-year FE、industry-year FE。
 7. 政策来源：2014 改革文件、国务院材料、World Bank 报告和前置审批清理证据需要正式核验。
 
 ## 合作者版摘要
 
-本文拟利用 2014 年中国商事制度改革作为进入放松冲击，研究产品市场改革是否能够约束企业劳动市场势力。改革降低了企业设立中的注册资本、登记和审批成本；改革前进入资本负担更高的行业，理论上受到更强的进入放松冲击。我们将主解释变量构造为改革后时期与改革前进入壁垒的交互项，估计其对企业 labor markdown 的 reduced-form effect。
+本文拟利用 2014 年中国商事制度改革作为进入放松冲击，研究企业进入门槛下降是否能够通过增加潜在雇主和改善 worker outside options，约束企业劳动市场势力。改革降低了企业设立中的注册资本、登记和审批成本；改革前进入资本负担更高的行业，理论上受到更强的进入放松冲击。我们将主解释变量构造为改革后时期与改革前进入壁垒的交互项，估计其对企业 labor markdown 的 reduced-form effect。
 
-核心预测是，进入壁垒放松更强的行业在改革后 labor markdown 下降更多。机制上，改革应首先带来产品市场结构变化，例如进入率上升、集中度下降、markup 或 price-cost margin 下降；同时，新增企业提高劳动者外部雇主选择，使企业面对的残余劳动供给更有弹性，从而降低工资相对劳动边际收益产品的缺口。
+核心预测是，进入壁垒放松更强的行业在改革后 labor markdown 下降更多。机制上，新增企业提高劳动者外部雇主选择，使企业面对的残余劳动供给更有弹性，从而降低工资相对劳动边际收益产品的缺口。产品市场结构变化，例如进入率上升、集中度下降、markup 或 price-cost margin 变化，用于验证改革确实改变了进入环境，并作为辅助机制证据。
 
-本文的识别纪律是：不把产品市场竞争、markup、HHI 或进入率直接当作主解释变量，因为它们是改革后的均衡结果。论文先估计政策冲击暴露度对 labor markdown 的主效应，再用产品市场结构变量做 reform validation 和机制异质性分析。这种写法更接近 applied micro 和 top-field journal 的标准：主效应直接，机制分层证明，避免把内生机制变量当成外生冲击。
+本文的识别纪律是：不把产品市场竞争、markup、HHI 或进入率直接当作主解释变量，因为它们是改革后的均衡结果。论文先估计政策冲击暴露度对 labor markdown 的主效应，再用产品市场结构变量做 reform validation，并用雇主集中度、劳动市场重叠和工人流动性等异质性检验主机制。这种写法更接近 applied micro 和 top-field journal 的标准：主效应直接，机制分层证明，避免把内生机制变量当成外生冲击。
